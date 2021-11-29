@@ -32,6 +32,7 @@ header ul{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    
 }
 header li{
     list-style: none;
@@ -71,21 +72,18 @@ header a:hover{
     background-position: center;
     background-size: cover;
     margin: auto;
-}
-
-.herosection p{
+    p{
     color: white;
     font-size: 2rem;
     margin: 0 20px 0 20px;
     font-family: 'Anton', sans-serif;
-}
-
-.herosection p a{
+    a{
     text-decoration: none;
     font-size: 2.2rem;
     color:$color-primario;
 }
-
+}
+}
 .herosection p a:hover{
     text-decoration: underline;
 }
@@ -118,25 +116,24 @@ h2{
     margin: 20px;
     width: 280px;
     height: 420px;
-}
-.card h3{
+    h3{
     font-size: 2rem;
     color:$color-secundario;
-}
-.card p{
+    }
+    p{
     font-size: 1.3rem;
-}
-
-.card img{
+    }
+    img{
     width: 180px;
     padding: 0px 0px 0px 0px;
+    }
 }
 .card:hover{
     transform: translateY(-5%);
     background-color: $color-primario;
     box-shadow: 15px 15px 20px $color-secundario;
     transition: 1s;
-}
+    }
 .proyectos a{
     color: $color-primario;
     font-size: 2rem;
@@ -170,16 +167,14 @@ h2{
     background-size: cover;
     height: 120vh;
     width: 100%;
-}
-
-.sobre-mi p{
+    p{
     color: white;
     font-size: 2.5rem;
     width: 50%;
     padding: 10px;
     margin-left: 3%;
-}
-.sobre-mi a{
+    }
+    a{
     text-decoration: none;
     background-color: $color-primario;
     color:$color-secundario;
@@ -190,6 +185,7 @@ h2{
     width: 10%;
     padding: 16px;
     margin: 5%;
+    }
 }
 .sobre-mi a:hover{
     color:$color-primario;
@@ -208,11 +204,11 @@ h2{
         flex-direction: column;
         text-align: center;
         justify-content: center;
-    }
-    .contacto p{
-        margin: 0;
+        p{
+            margin: 0;
         color: white;
         font-size: 1.8rem;
+        }
     }
     .email input{
         width: 50%;
@@ -224,14 +220,12 @@ h2{
         border-bottom: 2px solid $color-secundario;
         background-color: $color-black;
         color: white;
-    }
-
-    .email input:focus{
+        input:focus{
         background-color:$color-primario;
         border-spacing: none;
         color:$color-secundario;
         transition: 3s;
-
+    }
     }
 
     .texto textarea{
@@ -270,31 +264,30 @@ h2{
     align-items: center;
     border-bottom:solid 3px $color-secundario;
     padding: 0px;
-}
-.sobre-mi-page p{
+    p{
     color: white;
     margin: 0px 40px;
     width: 60%;
-}
-.sobre-mi-page p span{
+    }
+    p span{
     color: $color-secundario;
-}
-.sobre-mi-page img{
+    }
+    img{
     width: 30%;
     height: 55%;
     margin: 0px 10px 0px 0px;
 }
+}
 .btn-sobre-mi{
     text-align: center;
     margin: 30px;
-    
-}
-.btn-sobre-mi a{
+    a{
     text-decoration: none;
     color: $color-secundario;
     border-bottom: 1px solid $color-secundario;
     padding: 5px 10px;
     font-size: 1.3rem;
+}
 }
 .btn-sobre-mi a:hover{
     color: white;
@@ -346,12 +339,13 @@ footer{
     flex-direction: row;
     align-items: flex-end;
     justify-content:flex-end;
-}
-footer img{
+    img{
     width: 40px;
     height: 40px;
     margin: 5px 20px 5px 0px;
+    }
 }
+
 footer:hover{
     background-color: $color-primario;
 }
@@ -370,10 +364,11 @@ footer:hover{
         font-size: 1.5rem;
         margin: 0 10px 0 20px;
         font-family: 'Anton', sans-serif;
-    }
-    .herosection p a{
+        a{
         font-size: 2rem;
+        }
     }
+    
     .tarjetas{
         display:flex;
         flex-direction: column;
@@ -388,27 +383,28 @@ footer:hover{
         padding: 8px;
         margin: 10px;
     }
-
-    .sobre-mi p{
+    .sobre-mi{
+        p{
         font-size: 1.5rem;
         }
-    .sobre-mi a{
+        a{
         font-size: 1rem;
         width: 10%;
         padding: 16px;
         margin: 5%;
+        }
     }
     .sobre-mi-page{
         font-size: 1.5rem;
-    }
-    .sobre-mi-page p{
+    p{
         margin: 0px 30px;
         width: 60%;
-    }
-    .sobre-mi-page img{
+        }
+    img{
         width: 25%;
         height: 35%;
         margin: 0px 10px 0px 0px;
+        }
     }
     footer{
         background-color: $color-primario;
@@ -419,23 +415,23 @@ footer:hover{
 
     header{
         height: 40%;
-    }
-    header ul{
+        ul{
         padding: 0;
-    }
-    header ul li a{
+        }
+        ul li a{
         margin: 0px 5px;
-        padding: 3px;
-        font-size: 1rem;
+                padding: 3px;
+                font-size: 1rem;
+        }
     }
     .herosection p{
         color: white;
         font-size: 1rem;
         margin: 0 20px 0 20px;
         font-family: 'Anton', sans-serif;
-    }
-    .herosection p a{
+        a{
         font-size: 1.4rem;
+        }
     }
     h2{
         margin-top: 25px;
@@ -447,17 +443,18 @@ footer:hover{
         align-items: center;
         margin: 105% 0%;
     }
-
-    .sobre-mi p{
+    .sobre-mi{
+        p{
         font-size: 1.5rem;
         width: 80%;
         }
-    .sobre-mi a{
+        a{
         font-size: 1rem;
         width: 20%;
         padding: 16px;
         margin: 5%;
-    }
+        }
+    } 
     .contacto p{
         margin: 0;
         color: #fdfdfd;
@@ -469,7 +466,7 @@ footer:hover{
         margin: 20px 0px;
         font-size: 1.1rem;
     }
-
+    
     .email input:focus{
         transition: 0s;
 
@@ -489,17 +486,17 @@ footer:hover{
     }
     .sobre-mi-page{
         font-size: 1.4rem;
-    }
-    .sobre-mi-page p{
+        p{
         color: white;
         margin: 0px 40px;
         width: 80%;
-    }
-    .sobre-mi-page p span{
+        }
+        p span{
         font-size: 1.6rem;
-    }
-    .sobre-mi-page img{
+        }
+        img{
         display: none;
+        }
     }
     .btn-sobre-mi a{
         text-decoration: none;
