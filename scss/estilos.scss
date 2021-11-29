@@ -1,0 +1,508 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+}
+.contenido{
+    width: 100%;
+}
+
+/*-----header-----*/
+header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0),
+    rgba(47, 47, 47, 0.445)
+    )
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+header li{
+    list-style: none;
+}
+header ul li a{
+    color: #f2ff00;
+    text-transform:capitalize;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px 0px 10px 0px;
+    margin: 5px 30px;
+
+}
+
+header a:hover{
+    color:#8b0780;
+}
+
+/*-----fin header-----*/
+
+/*-----hero-----*/
+
+.herosection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%; 
+    border-radius: 0px 0px 30px 30px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ),
+    url(../img/heroimg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
+.herosection p{
+    color: white;
+    font-size: 2rem;
+    margin: 0 20px 0 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+.herosection p a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    color:#f2ff00;
+}
+
+.herosection p a:hover{
+    text-decoration: underline;
+}
+
+/*-----fin hero-----*/
+
+h2{
+    color:#f2ff00;
+    font-size: 3rem;
+    text-align: center;
+    margin: 100px 0px 10px 0px;
+}
+
+/*-----tajetas-----*/
+.tarjetas{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-row: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: #474747;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 280px;
+    height: 420px;
+}
+.card h3{
+    font-size: 2rem;
+    color:#ca09ba;
+}
+.card p{
+    font-size: 1.3rem;
+}
+
+.card img{
+    width: 180px;
+    padding: 0px 0px 0px 0px;
+}
+.card:hover{
+    transform: translateY(-5%);
+    background-color: #f2ff00;
+    box-shadow: 15px 15px 20px #ff31cb66;
+    transition: 1s;
+}
+.proyectos a{
+    color: #f2ff00;
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+.proyectos a:hover{
+    color:#ca09ba;
+}
+
+
+/*----- fin tarjetas-----*/
+
+/*-----sobreMi-----*/
+
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/galaxi.jpg); 
+    background-position: center center;
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+}
+
+.sobre-mi p{
+    color: white;
+    font-size: 2.5rem;
+    width: 50%;
+    padding: 10px;
+    margin-left: 3%;
+}
+.sobre-mi a{
+    text-decoration: none;
+    background-color: #f2ff00;
+    color:#ca09ba;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align:center;
+    border-radius: 15px;
+    width: 10%;
+    padding: 16px;
+    margin: 5%;
+}
+.sobre-mi a:hover{
+    color:#f2ff00;
+    background-color: #ca09ba;
+    transition: 2s;
+}
+
+/*-----final sobre mi------*/
+
+/*------contacto-----*/
+    .contacto{
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .contacto p{
+        margin: 0;
+        color: white;
+        font-size: 1.8rem;
+    }
+    .email input{
+        width: 50%;
+        padding: 10px;
+        margin: 20px 0px;
+        font-size: 1.7rem;
+        text-align: center;
+        border: none;
+        border-bottom: 2px solid #ca09ba;
+        background-color: #000000;
+        color: white;
+    }
+
+    .email input:focus{
+        background-color:#f2ff00;
+        border-spacing: none;
+        color:#ca09ba;
+        transition: 3s;
+
+    }
+
+    .texto textarea{
+        margin: 30px 0px;
+        font-size: 1.3rem;
+        color: #f2ff00;
+        background-color: rgba(47, 47, 47, 0.445);
+    }
+    
+    .contacto form a{
+        background-color:#3d3d3c;
+        border-radius: 8px;
+        width: 80px;
+        padding: 15px 40px;
+        margin: 30px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #ca09ba;
+    }
+    .contacto a:hover{
+        background-color: #f2ff00;
+        transition: 2s;
+    }
+/*------fin del contacto------*/
+
+/*------sobre-mi-page------*/
+.sobre-mi-page{
+    width: 100%;
+    height: 99vh;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    border-bottom:solid 3px #ca09ba;
+    padding: 0px;
+}
+.sobre-mi-page p{
+    color: white;
+    margin: 0px 40px;
+    width: 60%;
+}
+.sobre-mi-page p span{
+    color: #ca09ba;
+}
+.sobre-mi-page img{
+    width: 30%;
+    height: 55%;
+    margin: 0px 10px 0px 0px;
+}
+.btn-sobre-mi{
+    text-align: center;
+    margin: 30px;
+    
+}
+.btn-sobre-mi a{
+    text-decoration: none;
+    color: #ca09ba;
+    border-bottom: 1px solid #ca09ba;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+}
+.btn-sobre-mi a:hover{
+    color: white;
+    transition: 1s;
+}
+
+/*------fin sobre-mi-page------*/
+
+
+/*------proyectos-page------*/
+.proyectos-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 170vh;
+    justify-content: space-evenly;
+}
+.proyecto-1{
+    width: 440px;
+    height: 360px;
+}
+.proyecto-1 img{
+    height: 100%;
+    width: 100%;
+
+}
+.proyecto-1 h6{
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
+    text-decoration: none;
+}
+.proyecto-1 a{
+    text-decoration: none;
+}
+.proyecto-1 a h6{
+    color: #ec4204;
+}
+/*------fin proyectos-page------*/
+
+
+/*------footer------*/
+footer{
+    background-color: #737902;
+    width:100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content:flex-end;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+    margin: 5px 20px 5px 0px;
+}
+footer:hover{
+    background-color: #f2ff00;
+}
+
+/*------fin footer------*/
+
+
+
+
+
+/*******/
+@media only screen and (max-width: 768px){  
+    
+    .herosection p{
+        color: white;
+        font-size: 1.5rem;
+        margin: 0 10px 0 20px;
+        font-family: 'Anton', sans-serif;
+    }
+    .herosection p a{
+        font-size: 2rem;
+    }
+    .tarjetas{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50% 0%;
+    }
+    .card a{
+        text-decoration: none;
+        color: #ca09ba;
+        font-size: 1.2rem;
+        padding: 8px;
+        margin: 10px;
+    }
+
+    .sobre-mi p{
+        font-size: 1.5rem;
+        }
+    .sobre-mi a{
+        font-size: 1rem;
+        width: 10%;
+        padding: 16px;
+        margin: 5%;
+    }
+    .sobre-mi-page{
+        font-size: 1.5rem;
+    }
+    .sobre-mi-page p{
+        margin: 0px 30px;
+        width: 60%;
+    }
+    .sobre-mi-page img{
+        width: 25%;
+        height: 35%;
+        margin: 0px 10px 0px 0px;
+    }
+    footer{
+        background-color: #f2ff00;
+    }
+}
+
+@media only screen and (max-width: 426px){
+
+    header{
+        height: 40%;
+    }
+    header ul{
+        padding: 0;
+    }
+    header ul li a{
+        margin: 0px 5px;
+        padding: 3px;
+        font-size: 1rem;
+    }
+    .herosection p{
+        color: white;
+        font-size: 1rem;
+        margin: 0 20px 0 20px;
+        font-family: 'Anton', sans-serif;
+    }
+    .herosection p a{
+        font-size: 1.4rem;
+    }
+    h2{
+        margin-top: 25px;
+    }
+    .tarjetas{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 105% 0%;
+    }
+
+    .sobre-mi p{
+        font-size: 1.5rem;
+        width: 80%;
+        }
+    .sobre-mi a{
+        font-size: 1rem;
+        width: 20%;
+        padding: 16px;
+        margin: 5%;
+    }
+    .contacto p{
+        margin: 0;
+        color: #fdfdfd;
+        font-size: 1.5rem;
+    }
+    .email input{
+        width: 70%;
+        padding: 10px;
+        margin: 20px 0px;
+        font-size: 1.1rem;
+    }
+
+    .email input:focus{
+        transition: 0s;
+
+    }
+
+    .texto textarea{
+        margin: 30px 0px;
+        font-size: 1.3rem;
+    }
+    
+    .contacto form a{
+        background-color:#000000;
+        font-size: 1.2rem;
+    }
+    .contacto a:hover{
+        background-color: #000000;
+    }
+    .sobre-mi-page{
+        font-size: 1.4rem;
+    }
+    .sobre-mi-page p{
+        color: white;
+        margin: 0px 40px;
+        width: 80%;
+    }
+    .sobre-mi-page p span{
+        font-size: 1.6rem;
+    }
+    .sobre-mi-page img{
+        display: none;
+    }
+    .btn-sobre-mi a{
+        text-decoration: none;
+        color: #ca09ba;
+        border-bottom: 1px solid #ca09ba;
+        padding: 5px 5px;
+        font-size: 1rem;
+    }
+}
