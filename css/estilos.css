@@ -54,7 +54,7 @@ header a:hover {
   background-size: cover;
   margin: auto; }
   .herosection p {
-    color: white;
+    color: #ffffff;
     font-size: 2rem;
     margin: 0 20px 0 20px;
     font-family: 'Anton', sans-serif; }
@@ -131,7 +131,7 @@ h2 {
   height: 120vh;
   width: 100%; }
   .sobre-mi p {
-    color: white;
+    color: #ffffff;
     font-size: 2.5rem;
     width: 50%;
     padding: 10px;
@@ -165,7 +165,7 @@ h2 {
   justify-content: center; }
   .contacto p {
     margin: 0;
-    color: white;
+    color: #ffffff;
     font-size: 1.8rem; }
 
 .email input {
@@ -177,7 +177,7 @@ h2 {
   border: none;
   border-bottom: 2px solid #8b0780;
   background-color: #000000;
-  color: white; }
+  color: #ffffff; }
   .email input input:focus {
     background-color: #f2ff00;
     border-spacing: none;
@@ -219,7 +219,7 @@ h2 {
   border-bottom: solid 3px #8b0780;
   padding: 0px; }
   .sobre-mi-page p {
-    color: white;
+    color: #ffffff;
     margin: 0px 40px;
     width: 60%; }
   .sobre-mi-page p span {
@@ -240,7 +240,7 @@ h2 {
     font-size: 1.3rem; }
 
 .btn-sobre-mi a:hover {
-  color: white;
+  color: #ffffff;
   transition: 1s; }
 
 /*------fin sobre-mi-page------*/
@@ -261,7 +261,7 @@ h2 {
   width: 100%; }
 
 .proyecto-1 h6 {
-  color: #fdfdfd;
+  color: #ffffff;
   text-align: center;
   font-size: 1.5rem;
   margin: 10px;
@@ -295,7 +295,7 @@ footer:hover {
 /*******/
 @media only screen and (max-width: 768px) {
   .herosection p {
-    color: white;
+    color: #ffffff;
     font-size: 1.5rem;
     margin: 0 10px 0 20px;
     font-family: 'Anton', sans-serif; }
@@ -342,7 +342,7 @@ footer:hover {
       padding: 3px;
       font-size: 1rem; }
   .herosection p {
-    color: white;
+    color: #ffffff;
     font-size: 1rem;
     margin: 0 20px 0 20px;
     font-family: 'Anton', sans-serif; }
@@ -366,7 +366,7 @@ footer:hover {
     margin: 5%; }
   .contacto p {
     margin: 0;
-    color: #fdfdfd;
+    color: #ffffff;
     font-size: 1.5rem; }
   .email input {
     width: 70%;
@@ -386,7 +386,7 @@ footer:hover {
   .sobre-mi-page {
     font-size: 1.4rem; }
     .sobre-mi-page p {
-      color: white;
+      color: #ffffff;
       margin: 0px 40px;
       width: 80%; }
     .sobre-mi-page p span {
