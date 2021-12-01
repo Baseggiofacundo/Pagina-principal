@@ -13,9 +13,9 @@ body {
 
 /*-----header-----*/
 header {
-  background-color: #000000;
-  width: 100%;
   height: 30%;
+  width: 100%;
+  background-color: #000000;
   display: flex;
   justify-content: space-evenly;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(47, 47, 47, 0.445)); }
@@ -43,11 +43,11 @@ header a:hover {
 /*-----fin header-----*/
 /*-----hero-----*/
 .herosection {
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100%;
   border-radius: 0px 0px 30px 30px;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/heroimg.jpg);
   background-position: center;
@@ -75,28 +75,30 @@ h2 {
 
 /*-----tajetas-----*/
 .tarjetas {
+  height: 100vh;
+  width: none;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-row: auto;
   justify-content: space-evenly;
-  align-items: center;
-  height: 100vh; }
+  align-items: center; }
 
 .card {
+  height: 420px;
+  width: 280px;
   background-color: #474747;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
-  width: 280px;
-  height: 420px; }
+  margin: 20px; }
   .card h3 {
     font-size: 2rem;
     color: #8b0780; }
   .card p {
     font-size: 1.3rem; }
   .card img {
+    height: none;
     width: 180px;
     padding: 0px 0px 0px 0px; }
 
@@ -122,21 +124,24 @@ h2 {
 /*----- fin tarjetas-----*/
 /*-----sobreMi-----*/
 .sobre-mi {
+  height: 120vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/galaxi.jpg);
   background-position: center center;
-  background-size: cover;
-  height: 120vh;
-  width: 100%; }
+  background-size: cover; }
   .sobre-mi p {
+    height: none;
+    width: 50%;
     color: #ffffff;
     font-size: 2.5rem;
-    width: 50%;
     padding: 10px;
     margin-left: 3%; }
   .sobre-mi a {
+    height: none;
+    width: 10%;
     text-decoration: none;
     background-color: #f2ff00;
     color: #8b0780;
@@ -144,7 +149,6 @@ h2 {
     font-size: 1.5rem;
     text-align: center;
     border-radius: 15px;
-    width: 10%;
     padding: 16px;
     margin: 5%; }
 
@@ -156,8 +160,8 @@ h2 {
 /*-----final sobre mi------*/
 /*------contacto-----*/
 .contacto {
-  width: 100%;
   height: 100vh;
+  width: 100%;
   background-color: #000000;
   display: flex;
   flex-direction: column;
@@ -169,6 +173,7 @@ h2 {
     font-size: 1.8rem; }
 
 .email input {
+  height: none;
   width: 50%;
   padding: 10px;
   margin: 20px 0px;
@@ -191,9 +196,10 @@ h2 {
   background-color: rgba(47, 47, 47, 0.445); }
 
 .contacto form a {
+  height: none;
+  width: 80px;
   background-color: #3d3d3c;
   border-radius: 8px;
-  width: 80px;
   padding: 15px 40px;
   margin: 30px;
   justify-content: center;
@@ -209,8 +215,8 @@ h2 {
 /*------fin del contacto------*/
 /*------sobre-mi-page------*/
 .sobre-mi-page {
-  width: 100%;
   height: 99vh;
+  width: 100%;
   font-size: 2.5rem;
   display: flex;
   flex-direction: row;
@@ -219,14 +225,15 @@ h2 {
   border-bottom: solid 3px #8b0780;
   padding: 0px; }
   .sobre-mi-page p {
+    height: none;
+    width: 60%;
     color: #ffffff;
-    margin: 0px 40px;
-    width: 60%; }
+    margin: 0px 40px; }
   .sobre-mi-page p span {
     color: #8b0780; }
   .sobre-mi-page img {
-    width: 30%;
     height: 55%;
+    width: 30%;
     margin: 0px 10px 0px 0px; }
 
 .btn-sobre-mi {
@@ -246,15 +253,16 @@ h2 {
 /*------fin sobre-mi-page------*/
 /*------proyectos-page------*/
 .proyectos-page {
+  height: 170vh;
+  width: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 170vh;
   justify-content: space-evenly; }
 
 .proyecto-1 {
-  width: 440px;
-  height: 360px; }
+  height: 360px;
+  width: 440px; }
 
 .proyecto-1 img {
   height: 100%;
@@ -276,16 +284,16 @@ h2 {
 /*------fin proyectos-page------*/
 /*------footer------*/
 footer {
-  background-color: #737902;
-  width: 100%;
   height: 55px;
+  width: 100%;
+  background-color: #737902;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end; }
   footer img {
-    width: 40px;
     height: 40px;
+    width: 40px;
     margin: 5px 20px 5px 0px; }
 
 footer:hover {
@@ -316,25 +324,28 @@ footer:hover {
   .sobre-mi p {
     font-size: 1.5rem; }
   .sobre-mi a {
-    font-size: 1rem;
+    height: none;
     width: 10%;
+    font-size: 1rem;
     padding: 16px;
     margin: 5%; }
   .sobre-mi-page {
     font-size: 1.5rem; }
     .sobre-mi-page p {
-      margin: 0px 30px;
-      width: 60%; }
+      height: none;
+      width: 60%;
+      margin: 0px 30px; }
     .sobre-mi-page img {
-      width: 25%;
       height: 35%;
+      width: 25%;
       margin: 0px 10px 0px 0px; }
   footer {
     background-color: #f2ff00; } }
 
 @media only screen and (max-width: 426px) {
   header {
-    height: 40%; }
+    height: 40%;
+    width: none; }
     header ul {
       padding: 0; }
     header ul li a {
@@ -357,11 +368,13 @@ footer:hover {
     align-items: center;
     margin: 105% 0%; }
   .sobre-mi p {
-    font-size: 1.5rem;
-    width: 80%; }
+    height: none;
+    width: 80%;
+    font-size: 1.5rem; }
   .sobre-mi a {
-    font-size: 1rem;
+    height: none;
     width: 20%;
+    font-size: 1rem;
     padding: 16px;
     margin: 5%; }
   .contacto p {
@@ -369,6 +382,7 @@ footer:hover {
     color: #ffffff;
     font-size: 1.5rem; }
   .email input {
+    height: none;
     width: 70%;
     padding: 10px;
     margin: 20px 0px;
@@ -386,9 +400,10 @@ footer:hover {
   .sobre-mi-page {
     font-size: 1.4rem; }
     .sobre-mi-page p {
+      height: none;
+      width: 80%;
       color: #ffffff;
-      margin: 0px 40px;
-      width: 80%; }
+      margin: 0px 40px; }
     .sobre-mi-page p span {
       font-size: 1.6rem; }
     .sobre-mi-page img {
