@@ -2,17 +2,17 @@
 @import "mixin";
 
 body{
+    @include sizes(none,100%);
     background-color:$color-black;
     margin:0;
     border:0;
     outline:0;
     font-size:100%;
-    width: 100%;
     font-family: 'Anton', sans-serif;
     letter-spacing: 1px;
 }
 .contenido{
-    width: 100%;
+    @include sizes(none,100%);
 }
 
 /*-----header-----*/
@@ -56,7 +56,7 @@ header a:hover{
 /*-----hero-----*/
 
 .herosection{
-    @include sizes(100vh,100%)
+    @include sizes(100vh,100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,9 +67,9 @@ header a:hover{
         rgba(0, 0, 0, 0.7)
     ),
     url(../img/heroimg.jpg);
-    background-position: center;
-    background-size: cover;
-    margin: auto;
+    background-position:center;
+    background-size:cover;
+    margin:auto;
     p{
     color: $color-white;
     font-size: 2rem;
@@ -82,6 +82,7 @@ header a:hover{
 }
 }
 }
+
 .herosection p a:hover{
     text-decoration: underline;
 }
@@ -407,8 +408,8 @@ footer:hover{
         }
         ul li a{
         margin: 0px 5px;
-                padding: 3px;
-                font-size: 1rem;
+        padding: 3px;
+        font-size: 1rem;
         }
     }
     .herosection p{
